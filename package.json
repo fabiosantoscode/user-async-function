@@ -1,0 +1,19 @@
+{
+  "name": "user-async-function",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiosantoscode/user-async-function.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabiosantoscode/user-async-function/issues"
+  },
+  "homepage": "https://github.com/fabiosantoscode/user-async-function#readme"
+}
