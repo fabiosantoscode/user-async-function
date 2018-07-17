@@ -10,8 +10,16 @@ This module exports a function that calls a user function and waits for its comp
 const userAsyncFunction = require('user-async-function')
 
 // somewhere in your code...
-userAsyncFunction(userOptions.someAsyncFunction).then(...)
+function someFunction(userOptions) {
+  userAsyncFunction(userOptions.someAsyncFunction).then(...)
+}
 
 // or in an async function
-await userAsyncFunction(userOptions.someAsyncFunction)
+async function someFunction(userOptions) {
+  await userAsyncFunction(userOptions.someAsyncFunction)
+}
+
+// Pass extra arguments at will
+// They will be passed to the user function (before the callback)
+userAsyncFunction(fn, 'arg1', 'arg2'/*, ...*/)
 ```
