@@ -10,6 +10,8 @@ module.exports = function(userFunction) {
     var ret = userFunction.apply(null, args.concat(nodeCb))
     if (ret && ret.then) {
       ret.then(resolve, reject)
+    } else if (ret !== undefined) {
+      resolve(ret)
     }
   })
 }

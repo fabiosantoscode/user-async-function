@@ -30,7 +30,23 @@ test('can take promise-returning functions', function (t) {
     t.equal(value, 'foo')
   })
 })
+test('handles immediate return', function (t) {
+  t.plan(1)
+  return uaf(function () {
+    return null
+  }).then(function (value) {
+    t.equal(value, null)
+  })
+})
 var e = new Error
+test('handles immediate throw', function (t) {
+  t.plan(1)
+  return uaf(function () {
+    throw e
+  }).catch(function (error) {
+    t.equal(error, e)
+  })
+})
 test('handles callback errors', function (t) {
   t.plan(1)
   return uaf(function (cb) {
