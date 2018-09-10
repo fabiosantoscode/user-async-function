@@ -8,7 +8,6 @@
   ],
   "scripts": {
     "test": "istanbul cover test",
-    "precommit": "npm run lint --silent && npm run test --silent",
     "lint": "standard --fix **/*.js *.js"
   },
   "repository": {
@@ -23,9 +22,13 @@
   "homepage": "https://github.com/fabiosantoscode/user-async-function#readme",
   "devDependencies": {
     "es6-promise": "^4.2.4",
-    "husky": "^0.14.3",
     "istanbul": "^1.1.0-alpha.1",
+    "pre-commit": "^1.2.2",
     "standard": "^12.0.1",
     "tape": "^4.9.1"
-  }
+  },
+  "pre-commit": [
+    "test",
+    "lint"
+  ]
 }
