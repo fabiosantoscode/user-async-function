@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = function(userFunction) {
+module.exports = function (userFunction) {
   var args = [].slice.call(arguments, 1)
   return new Promise(function (resolve, reject) {
     var nodeCb = function (err, data) {

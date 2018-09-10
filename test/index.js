@@ -38,7 +38,7 @@ test('handles immediate return', function (t) {
     t.equal(value, null)
   })
 })
-var e = new Error
+var e = new Error()
 test('handles immediate throw', function (t) {
   t.plan(1)
   return uaf(function () {
