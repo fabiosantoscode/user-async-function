@@ -1,5 +1,7 @@
 'use strict'
 
+var Promise = require('es6-promise')
+
 module.exports = function (userFunction) {
   var args = [].slice.call(arguments, 1)
   return new Promise(function (resolve, reject) {
