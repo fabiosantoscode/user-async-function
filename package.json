@@ -1,6 +1,6 @@
 {
   "name": "user-async-function",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Take async functions from user code, whether they're promise-returning functions, callback-calling functions, or async/await functions",
   "main": "index.js",
   "files": [
