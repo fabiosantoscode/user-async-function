@@ -1,6 +1,6 @@
 # user-async-function
 
-[![Build Status](https://travis-ci.org/fabiosantoscode/user-async-function.svg?branch=master)](https://travis-ci.org/fabiosantoscode/user-async-function)
+[![Build Status](https://travis-ci.org/fabiosantoscode/user-async-function.svg?branch=master)](https://travis-ci.org/fabiosantoscode/user-async-function) [![Coverage Status](https://coveralls.io/repos/github/fabiosantoscode/user-async-function/badge.svg?branch=master)](https://coveralls.io/github/fabiosantoscode/user-async-function?branch=master)
 
 This module exports a function that calls a user function and waits for its completion. This function can be a callback-calling function, an async/await function, or a promise-returning function.
 

@@ -7,7 +7,7 @@
     "index.js"
   ],
   "scripts": {
-    "test": "istanbul cover test",
+    "test": "istanbul cover test && coveralls < coverage/lcov.info",
     "lint": "standard --fix **/*.js *.js"
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/fabiosantoscode/user-async-function#readme",
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "es6-promise": "^4.2.4",
     "istanbul": "^1.1.0-alpha.1",
     "pre-commit": "^1.2.2",
